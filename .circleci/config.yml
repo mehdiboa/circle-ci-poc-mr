@@ -6,4 +6,4 @@ jobs:
       - image: amazonlinux:latest 
     steps:
       - checkout
-      - run: echo "hello world"
+      - run: ./deploy.sh 
