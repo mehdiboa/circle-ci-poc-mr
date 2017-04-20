@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circulate
     docker:
-      - image: amazonlinux:latest 
+      - image: fstab/docker-aws-cli 
     steps:
       - checkout
       - run: ./deploy.sh 
