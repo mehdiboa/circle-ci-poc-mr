@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circulate
     docker:
-      - image: garland/aws-cli-docker:latest
+      - image: mehdi8/amazonlinux-build:latest
     steps:
       - checkout
       - run: ./deploy.sh 
