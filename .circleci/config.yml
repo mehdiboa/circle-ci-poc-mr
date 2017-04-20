@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circulate
     docker:
-      - image: fstab/docker-aws-cli 
+      - image: fstab/docker-aws-cli:latest
     steps:
       - checkout
       - run: ./deploy.sh 
