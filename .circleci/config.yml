@@ -1,7 +1,6 @@
 version: 2
 jobs:
-  deploy:
-    working_directory: ~/circulate
+  build:
     docker:
       - image: mehdi8/amazonlinux-build:latest
       auth:
