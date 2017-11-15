@@ -1,9 +1,12 @@
 version: 2
 jobs:
-  build:
+  deploy:
     working_directory: ~/circulate
     docker:
       - image: mehdi8/amazonlinux-build:latest
+      auth:
+          username: $DOCKERHUB_USERNAME  # can specify string literal values
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
-      - run: ./deploy.sh 
+      - run: deploy 
