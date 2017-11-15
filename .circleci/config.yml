@@ -7,4 +7,4 @@ jobs:
           username: $DOCKERHUB_USERNAME  # can specify string literal values
           password: $DOCKERHUB_PASSWORD
     steps:
-      - run: env
+      - run: deploy
