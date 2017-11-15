@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: mehdi8/amazonlinux-build:latest
+      - image: mehdi8/boaweb:latest
         auth:
           username: $DOCKERHUB_USERNAME  # can specify string literal values
           password: $DOCKERHUB_PASSWORD
