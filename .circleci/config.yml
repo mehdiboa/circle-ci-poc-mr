@@ -1,8 +1,13 @@
 version: 2
 jobs:
-  build:
+  deploy:
     docker:
       - image: 872035818801.dkr.ecr.us-east-2.amazonaws.com/boaweb/deploy-igc:latest
 
     steps:
       - run: deploy
+workflows:
+  version: 2
+  build_accept_deploy:
+    jobs:
+      - deploy
